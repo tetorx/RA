@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Типография "Ra"</title>
 </head>
@@ -15,7 +16,7 @@
             <ul class="topmenu">
               <li><a href="#">Главная</a></li>
               <li><a href="#">новости</a></li>
-              <li><a href="#" class="submenu-link">полиграфия</a>
+              <li><a href="#" class="submenu-link">продукция</a>
                 <ul class="submenu">
                   <li><a href="#">этикетки</a></li>
                 </ul>
@@ -34,26 +35,85 @@
     <section class="labels">
         <div class="container">
             <div class="lable">
-                <dev class="lable_decr">этикетки</dev>
+                <dev class="lable_decr">продукция</dev>
                 <img src="icons/red-watercolor-brush-stroke-2-22-1024x336.png" alt="lable" class="lable_img">
             </div>
            
             <ul class="labels__tabs">
-                <li class="labels__tab labels__tab_active"><div>самоклеющие</div></li>
-                <li class="labels__tab"><div>термоусадочный</div></li>
-                <li class="labels__tab"><div>вплавляемая</div></li>
+                <li class="labels__tab labels__tab_active"><div>Этикетки для бытовой химии</div></li>
+                <li class="labels__tab"><div>этикетки для пищевых продуктов</div></li>
+                <li class="labels__tab"><div>этикетки для косметики</div></li>
+                <li class="labels__tab"><div>этикетки для автохимии</div></li>
             </ul>
             <div class="labels__content labels__content_active">
-                <div class="labels_item">
-                    <img src="img/labels/BCNvXe5cPYg.jpg" alt="labels" class="labels_item_img">
+                <div class="row">
+                    <div class="column">
+                      <img src="img/labels/_iWx7kSUxng.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="img/labels/BCNvXe5cPYg.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="img/labels/hLceX2EnO3g.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="img/labels/pjlPe1BE6tk.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                  </div>
+                  
+                  <!-- The Modal/Lightbox -->
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/labels/_iWx7kSUxng.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/labels/BCNvXe5cPYg.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/labels/hLceX2EnO3g.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/labels/pjlPe1BE6tk.jpg" style="width:100%">
+                      </div>
+                  
+                      <!-- Next/previous controls -->
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <!-- Caption text -->
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                      <!-- Thumbnail image controls -->
+                      <div class="column">
+                        <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                      </div>
+                  
+                      <div class="column">
+                        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                      </div>
+                  
+                      <div class="column">
+                        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                      </div>
+                  
+                      <div class="column">
+                        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                      </div>
+                    </div>
+                  </div>   
                 </div>
-                <div class="labels_item">
-                    <img src="img/labels/hLceX2EnO3g.jpg" alt="labels" class="labels_item_img">
-                </div>
-                <div class="labels_item">
-                    <img src="img/labels/pjlPe1BE6tk.jpg" alt="labels" class="labels_item_img">
-                </div>
-            </div>
               
             <div class="labels__content">
                 <div class="labels_item">
@@ -97,6 +157,45 @@
             <div class="contacts_map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A612e71e98f5ed74abcdb9900f1ed87ff2270fae10c239259bd163cb92ee07269&amp;source=constructor" width="700" height="200" frameborder="0"></iframe></div>
         </div>
     </section>
+    <footer>
+        <div class="footer_wrapper">
+            <div>
+                <div class="footer_social">
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_main">
+                        <a href="#">главная</a>
+                        <a href="#">новости</a>
+                        <a href="#">продукция</a>
+                        <a href="#">отзывы</a>
+                        <a href="#">контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="footer_mobile">
+                    <a href="#">
+                        <img src="icons/logo/logo white.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_divider"></div>
+    </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
